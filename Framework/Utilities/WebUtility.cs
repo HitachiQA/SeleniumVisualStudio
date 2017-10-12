@@ -16,6 +16,7 @@ class WebUtility
     {
         LoggerUtility log = new LoggerUtility();
         String fpath = log.returnFilePath();
+                
 
         try
         {
@@ -23,6 +24,7 @@ class WebUtility
             //tw.WriteLine("The very first line!");
             logfile = true;
             Console.WriteLine("Log file accessible to write");
+            log.clearFiles();
         }
         catch (IOException e)
         {
